@@ -4,7 +4,7 @@ A machine learning project for predicting used car prices from Craigslist listin
 
 ## Project Overview
 
-**Goal:** Build interpretable ML models that predict used car prices and provide actionable insights — e.g., which features drive price up or down, and by how much.
+**Goal:** Build interpretable ML models that predict used car prices and provide actionable insights e.g., which features drive price up or down, and by how much.
 
 **Dataset:** [Craigslist Cars and Trucks Data](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data) — ~426K listings scraped from Craigslist across the US.
 
