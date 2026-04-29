@@ -62,10 +62,14 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
 
 def impute_categoricals(df: pd.DataFrame, fill_value: str = 'unknown') -> pd.DataFrame:
     df = df.copy()
-    for col in CAT_COLS + ['condition', 'size']:
+    for col in CAT_COLS + ['condition', 'cylinders', 'size']:
         if col in df.columns:
             df[col] = df[col].fillna(fill_value)
-    df['cylinders_int'] = df['cylinders_int'].fillna(0)
-    df['condition_ord'] = df['condition_ord'].fillna(-1)
-    df['log_odometer'] = df['log_odometer'].fillna(df['log_odometer'].median())
+    # These engineered columns may not exist yet if called before engineer_features()
+    if 'cylinders_int' in df.columns:
+        df['cylinders_int'] = df['cylinders_int'].fillna(0)
+    if 'condition_ord' in df.columns:
+        df['condition_ord'] = df['condition_ord'].fillna(-1)
+    if 'log_odometer' in df.columns:
+        df['log_odometer'] = df['log_odometer'].fillna(df['log_odometer'].median())
     return df

@@ -1,4 +1,5 @@
 # Data (large files tracked via Git LFS or excluded)
+data/
 data/raw/*.csv
 data/raw/*.parquet
 data/processed/*.csv
@@ -37,6 +38,7 @@ ENV/
 models/*.pkl
 models/*.joblib
 models/*.h5
+reports/
 reports/figures/*.png
 reports/figures/*.pdf
 
