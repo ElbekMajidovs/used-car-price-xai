@@ -8,6 +8,8 @@ A machine learning project for predicting used car prices from Craigslist listin
 
 **Dataset:** [Craigslist Cars and Trucks Data](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data) — ~426K listings scraped from Craigslist across the US.
 
+**Note:** Due to its large size (~1.5GB), the raw dataset is not included in this repository and is instead available on Google Drive: https://drive.google.com/drive/folders/1hor9hbrJHW0V9WsT7Wbkq6_hiK5ZIdQB
+
 **Target variable:** `price` (USD)
 
 ---
